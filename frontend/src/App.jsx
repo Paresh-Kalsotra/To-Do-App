@@ -6,12 +6,7 @@ function App() {
   const [todos, setTodos] = useState([]); // todolist
   const [message, setMessage] = useState(""); //meaasges from api requests
 
-<<<<<<< HEAD
   const serverUrl = "https://to-do-app-vatv.onrender.com/api/todos/";
-=======
-  const serverUrl =
-    "https://to-do-app-vatv.onrender.com/api/todos/";
->>>>>>> 7d4f77f5bb138cbbff8ec464b05bed03787f0a32
 
   //fetching updated todos from Db
   useEffect(() => {
