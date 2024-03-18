@@ -6,7 +6,8 @@ function App() {
   const [todos, setTodos] = useState([]); // todolist
   const [message, setMessage] = useState(""); //meaasges from api requests
 
-  const serverUrl = "http://localhost:5000/api/todos/";
+  const serverUrl =
+    "https://to-do-app-backend-git-main-pareshs-projects-17758b3c.vercel.app/api/todos/";
 
   //fetching updated todos from Db
   useEffect(() => {
