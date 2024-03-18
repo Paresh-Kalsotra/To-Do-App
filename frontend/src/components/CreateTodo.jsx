@@ -51,8 +51,19 @@ function CreateTodo({ serverUrl, setTodos, setMessage }) {
     <div className="add-container">
       <form onSubmit={handleSubmit}>
         <h4>Create a New Task</h4>
-        <input type="text" name="todoTitle" placeholder="Enter Task" required />
-        <input type="text" name="todoDesc" placeholder="Description" />
+        <input
+          type="text"
+          name="todoTitle"
+          placeholder="Enter Task"
+          required
+          maxlength="50"
+        />
+        <input
+          type="text"
+          name="todoDesc"
+          placeholder="Description"
+          maxlength="100"
+        />
         <button type="submit">Add</button>
       </form>
     </div>

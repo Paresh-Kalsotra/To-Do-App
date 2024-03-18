@@ -111,6 +111,7 @@ function DisplayTodos({ todos, setTodos, serverUrl, setMessage }) {
                   <label>Task:</label>
                   <input
                     value={editTitle}
+                    maxlength="50"
                     onChange={(e) => setEditTitle(e.target.value)}
                   ></input>
                 </div>
@@ -118,6 +119,7 @@ function DisplayTodos({ todos, setTodos, serverUrl, setMessage }) {
                   <label>Desc:</label>
                   <input
                     value={editDesc}
+                    maxlength="100"
                     onChange={(e) => setEditDesc(e.target.value)}
                   ></input>
                 </div>
@@ -127,7 +129,7 @@ function DisplayTodos({ todos, setTodos, serverUrl, setMessage }) {
             </div>
           ) : (
             <div className="todo-box">
-              {/* div from todo item */}
+              {/* div for todo item */}
               <div
                 style={{
                   display: "flex",
