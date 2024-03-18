@@ -1,17 +1,17 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-require("dotenv").config();
 
 const todoRouter = require("./router/todoRouter");
 
 const server = express();
-const port = process.env.PORT || 8000; //enviroment variables
-const connectionStr = process.env.Mongo_URI;
+const port = 8000; //enviroment variables
+uri =
+  "mongodb+srv://pareshkalsotra:pareshkanu@cluster0.oepwuys.mongodb.net/todoDB";
 
 //connecting to mongodb
 mongoose
-  .connect(connectionStr)
+  .connect(uri)
   .then(console.log("Connected to TodoDB"))
   .catch((err) => {
     console.log(`error connecting to DB ${err}`);
