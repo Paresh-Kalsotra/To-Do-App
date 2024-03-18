@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+body {
+  background-color: #eeeeee;
+}
+.add-container {
+  background-color: #222831;
+  color: #eeeeee;
+  padding: 20px;
+  border-radius: 5px;
+  margin-inline: 30px;
+}
+
+input {
+  width: 98%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 3px;
+  background-color: #393e46;
+  color: #eeeeee;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #00adb5;
+  color: #eeeeee;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #393e46;
+}
+
+.card {
+  background-color: #222831;
+  border-bottom: 2px solid #00adb5;
+  color: #eeeeee;
+}
+.edit-box,
+.todo-box {
+  padding: 20px;
+}
+
+.icon {
+  color: #00adb5;
+  margin-inline: 5px;
+  font-size: x-large;
+}
+
+.completedTodo {
+  text-decoration: line-through;
+}
+
+.pendingTodo {
+  text-decoration: none;
+}
