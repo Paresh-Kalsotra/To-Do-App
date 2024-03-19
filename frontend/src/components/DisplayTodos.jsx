@@ -83,7 +83,7 @@ function DisplayTodos({ todos, setTodos, serverUrl, setMessage }) {
   }
 
   return (
-    <div style={{ marginInline: "30px" }}>
+    <div className="todo-container">
       <h4
         style={{
           color: "#eeeeee",

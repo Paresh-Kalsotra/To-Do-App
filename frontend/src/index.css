@@ -12,6 +12,16 @@ body {
   border-radius: 5px;
   margin-inline: 30px;
 }
+.todo-container {
+  margin-inline: 30px;
+}
+
+#message {
+  font-weight: bolder;
+  margin: 10px;
+  margin-inline: 30px;
+  color: #00adb5;
+}
 
 input {
   width: 98%;
@@ -62,4 +72,16 @@ button:hover {
 
 .pendingTodo {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .add-container,
+  .todo-container,
+  #message {
+    width: 840px;
+    margin-inline: auto;
+  }
+  .add-container {
+    width: 800px;
+  }
 }

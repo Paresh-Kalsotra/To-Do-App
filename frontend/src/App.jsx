@@ -30,13 +30,8 @@ function App() {
         setTodos={setTodos}
         setMessage={setMessage}
       />
-      <p
-        style={{
-          fontWeight: "bolder",
-          margin: "10px",
-          marginInline: "30px",
-          color: "#00adb5",
-        }}
+      <p id="message"
+        
       >
         {message}
       </p>

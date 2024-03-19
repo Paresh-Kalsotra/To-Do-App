@@ -56,13 +56,13 @@ function CreateTodo({ serverUrl, setTodos, setMessage }) {
           name="todoTitle"
           placeholder="Enter Task"
           required
-          maxlength="50"
+          maxLength="50"
         />
         <input
           type="text"
           name="todoDesc"
           placeholder="Description"
-          maxlength="100"
+          maxLength="100"
         />
         <button type="submit">Add</button>
       </form>
