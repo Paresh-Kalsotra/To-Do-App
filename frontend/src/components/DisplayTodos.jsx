@@ -48,7 +48,7 @@ function DisplayTodos({ todos, setTodos, serverUrl, setMessage }) {
         method: "DELETE",
       });
       const updatedTodos = todos.filter((todo) => todo._id !== id); //filtering data
-      setEditId(null);
+
       setTodos(updatedTodos);
       setMessage("Task Deleted");
     } catch (error) {
